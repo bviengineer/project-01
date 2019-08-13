@@ -1,3 +1,4 @@
+<?php
 // PHP - Random Quote Generator
 
 // Create the Multidimensional array of quote elements and name it quotes
@@ -58,12 +59,14 @@ $quotes['Henry Ford'] = [
 
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuotes($array){
-  foreach ($array as $quote) {
-    echo $quote['quote'] . ' --- ' . $quote['source'] . "\n";
+    shuffle($array);
+    foreach ($array as $quote) {
+      echo $quote['quote'] . ' --- ' . $quote['source'] . "\n";
+    }
   }
-}
 
 getRandomQuotes($quotes);
 
 
 // Create the printQuote funtion and name it printQuote 
+?>
