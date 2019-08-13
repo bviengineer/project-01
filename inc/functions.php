@@ -60,9 +60,9 @@ $quotes['Henry Ford'] = [
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuotes($array){
     shuffle($array);
-    foreach ($array as $quote) {
+    //foreach ($array as $quote) {
       echo $quote['quote'] . ' --- ' . $quote['source'] . "\n";
-    }
+    //}
   }
 
 getRandomQuotes($quotes);
