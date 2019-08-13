@@ -4,7 +4,7 @@
 $quotes = [];
 
 // Each inner array element should be an associative array
-$quotes['Mother Teresa '] = [
+$quotes[] = [
     'quote' => 'If you judge people, you have no time to love them!',
     'source' => 'Mother Teresa',
     'citation' => '';
@@ -12,7 +12,7 @@ $quotes['Mother Teresa '] = [
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
-$quotes['Ralph Waldo Emerson'] = [
+$quotes[] = [
     'quote' => 'A great man is always willing to be little.',
     'source' => 'Ralph Waldo Emerson',
     'citation' => '';
@@ -21,7 +21,7 @@ $quotes['Ralph Waldo Emerson'] = [
 ];
 
 
-$quotes['Plato'] = [
+$quotes[] = [
     'quote' => 'The greatest wealth is to live content with little.',
     'source' => 'Plato',
     'citation' => '';
@@ -30,7 +30,7 @@ $quotes['Plato'] = [
 ];
 
 
-$quotes['Nelson Mandela'] = [
+$quotes[] = [
     'quote' => 'It always seems impossible until it’s done.',
     'source' => 'Nelson Mandela',
     'citation' => '';
@@ -39,7 +39,7 @@ $quotes['Nelson Mandela'] = [
 ];
 
 
-$quotes['Theodore Roosevelt'] = [
+$quotes[] = [
     'quote' => 'Do what you can, with what you have, where you are.',
     'source' => 'Theodore Roosevelt',
     'citation' => '';
