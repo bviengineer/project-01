@@ -75,10 +75,8 @@ $quotes[] = [
 
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuotes($array){
-    shuffle($array);
-    //foreach ($array as $quote) {
-      echo $quote['quote'] . ' --- ' . $quote['source'] . "\n";
-    //}
+    $randomNum = rand(0, 7);
+    echo $array[$randomNum]['quote'] . ' --- ' . $array[$randomNum]['source'] . "\n";
   }
 
 getRandomQuotes($quotes);
