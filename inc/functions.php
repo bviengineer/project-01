@@ -57,6 +57,22 @@ $quotes['Henry Ford'] = [
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
+$quotes[] = [
+    'quote' => 'The pessimist sees difficulty in every opportunity. The optimist sees the opportunity in every difficulty.',
+    'source' => 'Winston Churchhill',
+    'citation' => '',
+    'year' => '',
+    //'location' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
+];
+
+$quotes[] = [
+    'quote' => 'We may encounter many defeats but we must not be defeated.',
+    'source' => 'Maya Angelou',
+    'citation' => '',
+    'year' => '',
+    //'location' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
+];
+
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuotes($array){
     shuffle($array);
