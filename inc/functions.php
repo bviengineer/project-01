@@ -49,7 +49,7 @@ $quotes[] = [
 ];
 
 
-$quotes['Henry Ford'] = [
+$quotes[] = [
     'quote' => 'If you think you can do a thing or think you can\’t do a thing, you\’re right.',
     'source' => 'Henry Ford',
     'citation' => '',
