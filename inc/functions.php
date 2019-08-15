@@ -16,8 +16,8 @@ $quotes[] = [
 $quotes[] = [
     'quote' => 'A great man is always willing to be little.',
     'source' => 'Ralph Waldo Emerson',
-    'citation' => '',
-    'year' => '',
+    'citation' => 'test',
+    'year' => '1981',
     //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
@@ -34,8 +34,8 @@ $quotes[] = [
 $quotes[] = [
     'quote' => 'It always seems impossible until it\’s done.',
     'source' => 'Nelson Mandela',
-    'citation' => '',
-    'year' => '',
+    'citation' => 'test',
+    'year' => '1981',
     //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
@@ -60,8 +60,8 @@ $quotes['Henry Ford'] = [
 $quotes[] = [
     'quote' => 'The pessimist sees difficulty in every opportunity. The optimist sees the opportunity in every difficulty.',
     'source' => 'Winston Churchhill',
-    'citation' => '',
-    'year' => '',
+    'citation' => 'test',
+    'year' => '1981',
     //'location' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
 ];
 
@@ -86,14 +86,20 @@ function getRandomQuote($array){
   $theQuote = getRandomQuote($quotes);
   
   //viewing array values
-  print_r($theQuote);
+  //print_r($theQuote);
 
 
 // Create the printQuote funtion and name it printQuote 
 //function to print the randomly returned quote from the getRandomQuote function
 function printQuote($array){
     $theQuote = getRandomQuote($array);
-    print_r($theQuote);
+//    print_r($theQuote);  
+//    var_dump($theQuote);
+    if ($theQuote['citation'] != ''){
+      echo $theQuote['quote'] . ' -- '. $theQuote['source'] . ', '. $theQuote['citation'];
+    } else {
+        echo $theQuote['quote'] . ' -- '. $theQuote['source'] . ', '. $theQuote['citation'];
+    }
   }
   
   printQuote($quotes);
