@@ -8,7 +8,7 @@ $quotes = [];
 $quotes[] = [
     'quote' => 'If you judge people, you have no time to love them!',
     'source' => 'Mother Teresa',
-    'citation' => '';
+    'citation' => '',
     'year' => '',
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
