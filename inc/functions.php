@@ -32,7 +32,7 @@ $quotes[] = [
 
 
 $quotes[] = [
-    'quote' => 'It always seems impossible until it’s done.',
+    'quote' => 'It always seems impossible until it\’s done.',
     'source' => 'Nelson Mandela',
     'citation' => '';
     'year' => '',
@@ -50,7 +50,7 @@ $quotes[] = [
 
 
 $quotes['Henry Ford'] = [
-    'quote' => 'If you think you can do a thing or think you can’t do a thing, you’re right.',
+    'quote' => 'If you think you can do a thing or think you can\’t do a thing, you\’re right.',
     'source' => 'Henry Ford',
     'citation' => '';
     'year' => '',
