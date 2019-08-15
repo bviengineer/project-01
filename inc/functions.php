@@ -16,7 +16,7 @@ $quotes[] = [
 $quotes[] = [
     'quote' => 'A great man is always willing to be little.',
     'source' => 'Ralph Waldo Emerson',
-    'citation' => '';
+    'citation' => '',
     'year' => '',
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
@@ -25,7 +25,7 @@ $quotes[] = [
 $quotes[] = [
     'quote' => 'The greatest wealth is to live content with little.',
     'source' => 'Plato',
-    'citation' => '';
+    'citation' => '',
     'year' => '',
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
@@ -34,7 +34,7 @@ $quotes[] = [
 $quotes[] = [
     'quote' => 'It always seems impossible until it\’s done.',
     'source' => 'Nelson Mandela',
-    'citation' => '';
+    'citation' => '',
     'year' => '',
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
@@ -43,7 +43,7 @@ $quotes[] = [
 $quotes[] = [
     'quote' => 'Do what you can, with what you have, where you are.',
     'source' => 'Theodore Roosevelt',
-    'citation' => '';
+    'citation' => '',
     'year' => '',
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
@@ -52,7 +52,7 @@ $quotes[] = [
 $quotes['Henry Ford'] = [
     'quote' => 'If you think you can do a thing or think you can\’t do a thing, you\’re right.',
     'source' => 'Henry Ford',
-    'citation' => '';
+    'citation' => '',
     'year' => '',
     'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
@@ -95,6 +95,6 @@ function printQuote($array){
     $theQuote = getRandomQuote($quotes);
     var_dump($theQuote);
   }
-  
+
   printQuote($quotes);
 ?>
