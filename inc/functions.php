@@ -90,4 +90,11 @@ function getRandomQuote($array){
 
 
 // Create the printQuote funtion and name it printQuote 
+//function to print the randomly returned quote from the getRandomQuote function
+function printQuote($array){
+    $theQuote = getRandomQuote($quotes);
+    var_dump($theQuote);
+  }
+  
+  printQuote($quotes);
 ?>
