@@ -75,13 +75,27 @@ $quotes[] = [
 
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuotes($array){
-    //shuffling the array before the random selection in order to minimize the successive selection of the same quote 
-    shuffle($array);
+    //shuffling the array before random selection to minimize the successive selection of the same quote 
+    shuffle($array); 
+    
+    //generate random number that will be used to determine which quote to pull from the array
     $randomNum = rand(0, 7);
-    echo $array[$randomNum]['quote'] . ' --- ' . $array[$randomNum]['source'] . "\n";
+    
+    //will hold the randomly selected quote and it's corresponding source
+    $selectedQuote = [];
+    
+    //adding quote and source to the new array
+    array_push($selectedQuote, $array[$randomNum]['quote'], $array[$randomNum]['source']);
+    
+    //passing on the result
+    return $selectedQuote;
   }
-
-getRandomQuotes($quotes);
+  
+  //storing the returned random quote and source for printing 
+  $theQuote = getRandomQuotes($quotes);
+  
+  //viewing the quote and source
+  print_r($theQuote);
 
 
 // Create the printQuote funtion and name it printQuote 
