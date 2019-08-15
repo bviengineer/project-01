@@ -10,7 +10,7 @@ $quotes[] = [
     'source' => 'Mother Teresa',
     'citation' => '',
     'year' => '',
-    'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 $quotes[] = [
@@ -18,7 +18,7 @@ $quotes[] = [
     'source' => 'Ralph Waldo Emerson',
     'citation' => '',
     'year' => '',
-    'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 
@@ -27,7 +27,7 @@ $quotes[] = [
     'source' => 'Plato',
     'citation' => '',
     'year' => '',
-    'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 
@@ -36,7 +36,7 @@ $quotes[] = [
     'source' => 'Nelson Mandela',
     'citation' => '',
     'year' => '',
-    'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 
@@ -45,7 +45,7 @@ $quotes[] = [
     'source' => 'Theodore Roosevelt',
     'citation' => '',
     'year' => '',
-    'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 
@@ -54,7 +54,7 @@ $quotes['Henry Ford'] = [
     'source' => 'Henry Ford',
     'citation' => '',
     'year' => '',
-    'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 $quotes[] = [
