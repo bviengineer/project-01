@@ -10,15 +10,15 @@ $quotes[] = [
     'source' => 'Mother Teresa',
     'citation' => '',
     'year' => '',
-    //'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 $quotes[] = [
     'quote' => 'A great man is always willing to be little.',
     'source' => 'Ralph Waldo Emerson',
-    'citation' => 'test',
-    'year' => '1981',
-    //'location' => "http://wisdomquotes.com/famous-quotes/",
+    'citation' => '',
+    'year' => '',
+    //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 $quotes[] = [
@@ -26,39 +26,39 @@ $quotes[] = [
     'source' => 'Plato',
     'citation' => '',
     'year' => '',
-    //'location' => "http://wisdomquotes.com/famous-quotes/",
+    //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 $quotes[] = [
     'quote' => "It always seems impossible until it’s done.",
     'source' => 'Nelson Mandela',
-    'citation' => 'test',
-    'year' => '1981',
-    //'location' => "http://wisdomquotes.com/famous-quotes/",
+    'citation' => '',
+    'year' => '',
+    //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
 $quotes[] = [
-    'quote' => 'Do what you can, with what you have, where you are.',
-    'source' => 'Theodore Roosevelt',
-    'citation' => '',
-    'year' => '',
-    //'location' => "http://wisdomquotes.com/famous-quotes/",
+    'quote' => "Do what you can, with what you've got, where you are.",
+    'source' => 'Squire Bill Widener',
+    'citation' => 'Chapter IX of Theodore Roosevelt:  An Autobiography',
+    'year' => '1913',
+    //'url' => "https://suebrewton.com/tag/do-what-you-can-with-what-you-have-where-you-are/",
 ];
 
 $quotes[] = [
     'quote' => "If you think you can do a thing or think you can’t do a thing, you’re right.",
     'source' => 'Henry Ford',
-    'citation' => '',
-    'year' => '',
-    //'location' => "http://wisdomquotes.com/famous-quotes/",
+    'citation' => 'The Reader’s Digest',
+    'year' => '1947',
+    //'url' => "https://quoteinvestigator.com/2015/02/03/you-can/",
 ];
 
 $quotes[] = [
     'quote' => 'The pessimist sees difficulty in every opportunity. The optimist sees the opportunity in every difficulty.',
-    'source' => 'Winston Churchhill',
-    'citation' => 'test',
-    'year' => '1981',
-    //'location' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
+    'source' => 'unknown',
+    'citation' => '',
+    'year' => '',
+    //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
 ];
 
 $quotes[] = [
@@ -66,7 +66,7 @@ $quotes[] = [
     'source' => 'Maya Angelou',
     'citation' => '',
     'year' => '',
-    //'location' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
+    //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
 ];
 
 //getRandomQuuote function will handle the random selection of an inner array
