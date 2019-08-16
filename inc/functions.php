@@ -1,10 +1,10 @@
 <?php
 // PHP - Random Quote Generator
 
-// Create the Multidimensional array of quote elements and name it quotes
+//Multidimensional array for quote elements
 $quotes = [];
 
-// Each inner array element should be an associative array
+//Inner associative array elements
 $quotes[] = [
     'quote' => 'If you judge people, you have no time to love them!',
     'source' => 'Mother Teresa',
@@ -21,7 +21,6 @@ $quotes[] = [
     //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
-
 $quotes[] = [
     'quote' => 'The greatest wealth is to live content with little.',
     'source' => 'Plato',
@@ -30,15 +29,13 @@ $quotes[] = [
     //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
-
 $quotes[] = [
-    'quote' => 'It always seems impossible until it\’s done.',
+    'quote' => "It always seems impossible until it’s done.",
     'source' => 'Nelson Mandela',
     'citation' => 'test',
     'year' => '1981',
     //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
-
 
 $quotes[] = [
     'quote' => 'Do what you can, with what you have, where you are.',
@@ -48,9 +45,8 @@ $quotes[] = [
     //'location' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
-
 $quotes[] = [
-    'quote' => 'If you think you can do a thing or think you can\’t do a thing, you\’re right.',
+    'quote' => "If you think you can do a thing or think you can’t do a thing, you’re right.",
     'source' => 'Henry Ford',
     'citation' => '',
     'year' => '',
@@ -73,30 +69,20 @@ $quotes[] = [
     //'location' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
 ];
 
-// Create the getRandomQuuote function and name it getRandomQuote
+//getRandomQuuote function will handle the random selection of an inner array
 function getRandomQuote($array){
-    //generate random number that will be used to determine which quote to pull from the array
+    //Will generate a random number that will be used to determine which quote to pull from the inner arrays
     $randomNum = rand(0, 7);
     
-    //passing on the randomly selected inner array with quote
+    //Passing on the randomly selected inner associative array
     return $array[$randomNum];
   }
   
-  //storing the array with random quote 
-  //$theQuote = getRandomQuote($quotes);
-  
-  //viewing array values returned from getRandomQuote()
-  //print_r($theQuote);
 
-
-// Create the printQuote funtion and name it printQuote 
-//function to print the randomly returned quote from the getRandomQuote function
+//printQuote funtion will print the returned quote from the getRandomQuote function
 function printQuote($array){
     $theQuote = getRandomQuote($array);
     $quoteOutput = '';
-    //print_r($theQuote);  
-    //var_dump($theQuote);
-  echo $quoteOutput;
     if ($theQuote['citation'] != '' && $theQuote['year'] != ''){
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
       $quoteOutput .= "<p class='source'>" . $theQuote['source'];
@@ -107,9 +93,10 @@ function printQuote($array){
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
       $quoteOutput .= "<p class='source'>" . $theQuote['source'] . "</p>";
     }
+    //Will print the final quote to the screen
       echo $quoteOutput;
   }
   
-  
+  //Running or executing the printQuote function
   printQuote($quotes);
 ?>
