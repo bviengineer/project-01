@@ -83,9 +83,9 @@ function getRandomQuote($array){
   }
   
   //storing the array with random quote 
-  $theQuote = getRandomQuote($quotes);
+  //$theQuote = getRandomQuote($quotes);
   
-  //viewing array values
+  //viewing array values returned from getRandomQuote()
   //print_r($theQuote);
 
 
@@ -93,14 +93,27 @@ function getRandomQuote($array){
 //function to print the randomly returned quote from the getRandomQuote function
 function printQuote($array){
     $theQuote = getRandomQuote($array);
-//    print_r($theQuote);  
-//    var_dump($theQuote);
-    if ($theQuote['citation'] != ''){
-      echo $theQuote['quote'] . ' -- '. $theQuote['source'] . ', '. $theQuote['citation'];
+    $quoteOutput = '';
+    //print_r($theQuote);  
+    //var_dump($theQuote);
+  echo $quoteOutput;
+    if ($theQuote['citation'] != '' && $theQuote['year'] != ''){
+      $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
+      $quoteOutput += "<p class='source'>" . $theQuote['source'];
+//      $quoteOutput += "<span class='citation'>" . $theQuote['citation'] . "</span>";
+//      $quoteOutput += "<span class='year'>" . $theQuote['year'] . "</span>";
+//      $quoteOutput += "</p>";
+      //echo $theQuote['citation'] . '---' . $theQuote['year'];
+      //echo $quoteOutput; //$theQuote['quote'] . ' -- '. $theQuote['source'] . ', '. $theQuote['citation'];
     } else {
-        echo $theQuote['quote'] . ' -- '. $theQuote['source'] . ', '. $theQuote['citation'];
+        //echo $theQuote['quote'] . ' -- '. $theQuote['source'];
+      $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
+     // $quoteOutput += "<p class='source'>" . $theQuote['source'] . "</p>";
+      //echo $quoteOutput;
     }
+  echo $quoteOutput;
   }
+  
   
   printQuote($quotes);
 ?>
