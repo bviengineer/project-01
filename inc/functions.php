@@ -89,6 +89,14 @@ function printQuote($array){
       $quoteOutput .= "<span class='citation'>" . $theQuote['citation'] . "</span>";
       $quoteOutput .= "<span class='year'>" . $theQuote['year'] . "</span>";
       $quoteOutput .= "</p>";
+    } elseif ($theQuote['citation'] != '') {
+        $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
+        $quoteOutput .= "<p class='source'>" . $theQuote['source'];
+        $quoteOutput .= "<span class='citation'>" . $theQuote['citation'] . "</span>";
+    } elseif ($theQuote['year'] != '') {
+        $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
+        $quoteOutput .= "<p class='source'>" . $theQuote['source'];
+        $quoteOutput .= "<span class='year'>" . $theQuote['year'] . "</span>";
     } else {
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
       $quoteOutput .= "<p class='source'>" . $theQuote['source'] . "</p>";
