@@ -17,8 +17,8 @@ $quotes[] = [
     'quote' => 'A great man is always willing to be little.',
     'source' => 'Ralph Waldo Emerson',
     'citation' => '',
-    'year' => '',
-    //'url' => "http://wisdomquotes.com/famous-quotes/",
+    'year' => '1840',
+    //'url' => "https://en.wikiquote.org/wiki/Ralph_Waldo_Emerson",
 ];
 
 $quotes[] = [
