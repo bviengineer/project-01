@@ -99,19 +99,15 @@ function printQuote($array){
   echo $quoteOutput;
     if ($theQuote['citation'] != '' && $theQuote['year'] != ''){
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
-      $quoteOutput += "<p class='source'>" . $theQuote['source'];
-//      $quoteOutput += "<span class='citation'>" . $theQuote['citation'] . "</span>";
-//      $quoteOutput += "<span class='year'>" . $theQuote['year'] . "</span>";
-//      $quoteOutput += "</p>";
-      //echo $theQuote['citation'] . '---' . $theQuote['year'];
-      //echo $quoteOutput; //$theQuote['quote'] . ' -- '. $theQuote['source'] . ', '. $theQuote['citation'];
+      $quoteOutput .= "<p class='source'>" . $theQuote['source'];
+      $quoteOutput .= "<span class='citation'>" . $theQuote['citation'] . "</span>";
+      $quoteOutput .= "<span class='year'>" . $theQuote['year'] . "</span>";
+      $quoteOutput .= "</p>";
     } else {
-        //echo $theQuote['quote'] . ' -- '. $theQuote['source'];
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
-     // $quoteOutput += "<p class='source'>" . $theQuote['source'] . "</p>";
-      //echo $quoteOutput;
+      $quoteOutput .= "<p class='source'>" . $theQuote['source'] . "</p>";
     }
-  echo $quoteOutput;
+      echo $quoteOutput;
   }
   
   
