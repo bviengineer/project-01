@@ -23,5 +23,8 @@ const   reloadPage = function (){
             bgColor.style.backgroundColor = colorsArray[randomNum];
         };
 
-// Calls the reloadPage function every 20 seconds
-setInterval(changeColor, 5000);
+//Gets called on page refresh        
+changeColor();
+
+//Calls the reloadPage function every 20 seconds
+setInterval(reloadPage, 8000);
