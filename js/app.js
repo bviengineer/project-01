@@ -21,6 +21,7 @@ const   reloadPage = function (){
         changeColor = function (){
             let randomNum = Math.floor(Math.random() * colorsArray.length);                
             bgColor.style.backgroundColor = colorsArray[randomNum];
+            quoteBtn.style.backgroundColor = colorsArray[randomNum];
         };
 
 //Gets called on page refresh        
