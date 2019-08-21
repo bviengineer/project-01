@@ -27,4 +27,4 @@ const   reloadPage = function (){
 changeColor();
 
 //Calls the reloadPage function every 20 seconds
-setInterval(reloadPage, 8000);
+setInterval(reloadPage, 20000);
