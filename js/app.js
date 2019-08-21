@@ -13,17 +13,22 @@ const   quoteBtn = document.getElementById("loadQuote"),
             "yellow",
         ];
 
+        //function definition refreshes page and calls the change color function 
 const   reloadPage = function (){
             window.location.reload(true);
-},
+            if (bgColor.style.backgroundColor = "#36b55c"){ 
+                changeColor();
+            }
+        },
+        
+        //function definition generates a random number and uses it to pull a color from colors array
         changeColor = function (){
-            let randomNum = Math.floor(Math.random() * 8)+ 1;
+            let randomNum = Math.floor(Math.random() * 8)+ 1;                
             bgColor.style.backgroundColor = colorsArray[randomNum];
         };
 
-
 //Will calll the changeColor function definition if the show another Quote button is clicked 
-quoteBtn.addEventListener("click", changeColor);
+quoteBtn.addEventListener("click", reloadPage);
 
 // Calls the reloadPage function every 20 seconds
-setInterval(reloadPage, 5000);
+setInterval(reloadPage, 20000);
