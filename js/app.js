@@ -28,7 +28,7 @@ const   reloadPage = function (){
             bgColor.style.backgroundColor = colorsArray[randomNum];
         };
 
-//Will calll the changeColor function definition if the show another Quote button is clicked 
+//Will calll the reloadPage function definition if the show another Quote button is clicked 
 quoteBtn.addEventListener("click", reloadPage);
 
 // Calls the reloadPage function every 20 seconds
