@@ -2,7 +2,6 @@
 const   quoteBtn = document.getElementById("loadQuote"),
         bgColor = document.getElementsByTagName("body")[0],
         colorsArray = [
-            "", // empty string because the random # returned will never be 0 [unless the + 1 is removed] and thus the color at position 0 will never be selected
             "pink",
             "blue",
             "black",
