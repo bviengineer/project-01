@@ -16,12 +16,13 @@ const   quoteBtn = document.getElementById("loadQuote"),
         //function definition refreshes page and calls the change color function 
 const   reloadPage = function (){
             window.location.reload(true);
-            if (bgColor.style.backgroundColor = "#36b55c"){ 
+            if (bgColor.style.backgroundColor == "#36b55c" || bgColor.style.backgroundColor != "#36b55c"){ 
+                console.log(bgColor.style.backgroundColor);
                 changeColor();
             }
         },
         
-        //function definition generates a random number and uses it to pull a color from colors array
+        //function definition generates a random number and uses it to select a color from the colors array
         changeColor = function (){
             let randomNum = Math.floor(Math.random() * 8)+ 1;                
             bgColor.style.backgroundColor = colorsArray[randomNum];
