@@ -17,7 +17,7 @@ const   quoteBtn = document.getElementById("loadQuote"),
 const   reloadPage = function (){
             window.location.reload(true);
             if (bgColor.style.backgroundColor == "#36b55c" || bgColor.style.backgroundColor != "#36b55c"){ 
-                console.log(bgColor.style.backgroundColor);
+                console.log(bgColor.style.backgroundColor); //testing 
                 changeColor();
             }
         },
