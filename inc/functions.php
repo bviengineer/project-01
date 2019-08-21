@@ -10,6 +10,7 @@ $quotes[] = [
     'source' => 'Mother Teresa',
     'citation' => '',
     'year' => '',
+    'tag' => 'people'
     //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
@@ -18,6 +19,7 @@ $quotes[] = [
     'source' => 'Ralph Waldo Emerson',
     'citation' => '',
     'year' => '1840',
+    'tag' => 'wisdom',
     //'url' => "https://en.wikiquote.org/wiki/Ralph_Waldo_Emerson",
 ];
 
@@ -26,6 +28,7 @@ $quotes[] = [
     'source' => 'Plato',
     'citation' => '',
     'year' => '',
+    'tag' => 'wisdom',
     //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
@@ -34,6 +37,7 @@ $quotes[] = [
     'source' => 'Nelson Mandela',
     'citation' => '',
     'year' => '',
+    'tag' => 'inspirational',
     //'url' => "http://wisdomquotes.com/famous-quotes/",
 ];
 
@@ -42,6 +46,7 @@ $quotes[] = [
     'source' => 'Squire Bill Widener',
     'citation' => 'Chapter IX of Theodore Roosevelt:  An Autobiography',
     'year' => '1913',
+    'tag' => 'inspirational',
     //'url' => "https://suebrewton.com/tag/do-what-you-can-with-what-you-have-where-you-are/",
 ];
 
@@ -50,6 +55,7 @@ $quotes[] = [
     'source' => 'Henry Ford',
     'citation' => 'The Reader’s Digest',
     'year' => '1947',
+    'tag' => 'wisdom',
     //'url' => "https://quoteinvestigator.com/2015/02/03/you-can/",
 ];
 
@@ -58,6 +64,7 @@ $quotes[] = [
     'source' => 'unknown',
     'citation' => '',
     'year' => '',
+    'tag' => 'inspirational',
     //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
 ];
 
@@ -66,6 +73,7 @@ $quotes[] = [
     'source' => 'Maya Angelou',
     'citation' => '',
     'year' => '',
+    'tag' => 'inspirational',
     //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
 ];
 
@@ -83,12 +91,15 @@ function getRandomQuote($array){
 function printQuote($array){
     $theQuote = getRandomQuote($array);
     $quoteOutput = '';
-    if ($theQuote['citation'] != '' && $theQuote['year'] != ''){
+    if ($theQuote['citation'] != '' && $theQuote['year'] != '' && $theQuote['tags'] != ''){
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
       $quoteOutput .= "<p class='source'>" . $theQuote['source'];
       $quoteOutput .= "<span class='citation'>" . $theQuote['citation'] . "</span>";
       $quoteOutput .= "<span class='year'>" . $theQuote['year'] . "</span>";
+      $quoteOutput .= "<span class='year'>" . $theQuote['year'] . "</span>";
+      $quoteOutput .= "<br/>";
       $quoteOutput .= "</p>";
+      $quoteOutput .= "<p class='tag'>Tag:" . $theQuote['tag'] . "</p>";
     } elseif ($theQuote['citation'] != '') {
         $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
         $quoteOutput .= "<p class='source'>" . $theQuote['source'];
@@ -97,6 +108,10 @@ function printQuote($array){
         $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
         $quoteOutput .= "<p class='source'>" . $theQuote['source'];
         $quoteOutput .= "<span class='year'>" . $theQuote['year'] . "</span>";
+    } elseif ($theQuote['tag'] != '') {
+        $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
+        $quoteOutput .= "<p class='source'>" . $theQuote['source'];
+        $quoteOutput .= "<p class='tag'>Tag: " . $theQuote['tag'] . "</p>";
     } else {
       $quoteOutput = "<p class='quote'>" . $theQuote['quote'] . "</p>";
       $quoteOutput .= "<p class='source'>" . $theQuote['source'] . "</p>";

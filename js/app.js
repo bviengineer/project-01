@@ -9,7 +9,8 @@ const   quoteBtn = document.getElementById("loadQuote"),
             "violet",
             "purple",
             "silver",
-            "yellow",
+            "olive",
+            "brown",
         ];
 
         //function definition refreshes page and calls the change color function 
@@ -28,4 +29,4 @@ const   reloadPage = function (){
 changeColor();
 
 //Calls the reloadPage function every 20 seconds
-setInterval(reloadPage, 20000);
+//setInterval(reloadPage, 20000);
