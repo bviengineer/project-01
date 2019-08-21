@@ -11,7 +11,7 @@ $quotes[] = [
     'citation' => '',
     'year' => '',
     'tag' => 'people'
-    //'url' => "http://wisdomquotes.com/famous-quotes/",
+    //'url' => "http://wisdomquotes.com/famous-quotes/", for personal record keeping
 ];
 
 $quotes[] = [
@@ -20,7 +20,7 @@ $quotes[] = [
     'citation' => '',
     'year' => '1840',
     'tag' => 'wisdom',
-    //'url' => "https://en.wikiquote.org/wiki/Ralph_Waldo_Emerson",
+    //'url' => "https://en.wikiquote.org/wiki/Ralph_Waldo_Emerson", for personal record keeping
 ];
 
 $quotes[] = [
@@ -29,7 +29,7 @@ $quotes[] = [
     'citation' => '',
     'year' => '',
     'tag' => 'wisdom',
-    //'url' => "http://wisdomquotes.com/famous-quotes/",
+    //'url' => "http://wisdomquotes.com/famous-quotes/", for personal record keeping
 ];
 
 $quotes[] = [
@@ -38,7 +38,7 @@ $quotes[] = [
     'citation' => '',
     'year' => '',
     'tag' => 'inspirational',
-    //'url' => "http://wisdomquotes.com/famous-quotes/",
+    //'url' => "http://wisdomquotes.com/famous-quotes/", for personal record keeping
 ];
 
 $quotes[] = [
@@ -47,7 +47,7 @@ $quotes[] = [
     'citation' => 'Chapter IX of Theodore Roosevelt:  An Autobiography',
     'year' => '1913',
     'tag' => 'inspirational',
-    //'url' => "https://suebrewton.com/tag/do-what-you-can-with-what-you-have-where-you-are/",
+    //'url' => "https://suebrewton.com/tag/do-what-you-can-with-what-you-have-where-you-are/", for personal record keeping
 ];
 
 $quotes[] = [
@@ -56,7 +56,7 @@ $quotes[] = [
     'citation' => 'The Reader’s Digest',
     'year' => '1947',
     'tag' => 'wisdom',
-    //'url' => "https://quoteinvestigator.com/2015/02/03/you-can/",
+    //'url' => "https://quoteinvestigator.com/2015/02/03/you-can/", for personal record keeping
 ];
 
 $quotes[] = [
@@ -65,7 +65,7 @@ $quotes[] = [
     'citation' => '',
     'year' => '',
     'tag' => 'inspirational',
-    //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
+    //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/", for personal record keeping
 ];
 
 $quotes[] = [
@@ -74,7 +74,7 @@ $quotes[] = [
     'citation' => '',
     'year' => '',
     'tag' => 'inspirational',
-    //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/",
+    //'url' => "https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/", for personal record keeping
 ];
 
 //getRandomQuuote function will handle the random selection of an inner array
