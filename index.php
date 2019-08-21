@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Obtained page Refresh method from W3Schools: https://www.w3schools.com/tags/att_meta_http_equiv.asp -->
   <title>Random Quotes</title>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
